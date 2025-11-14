@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SantaraKarsa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ================= HEADER / NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container-nav">
+            <!-- LOGO -->
+            <a href="#home" class="navbar-logo">
+                <img src="images/logo.png" alt="SantaraKarsa Logo">
+                <span>SantaraKarsa</span>
+            </a>
+            <!-- HAMBURGER -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <!-- NAVIGATION -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn" aria-expanded="false">
+                            Fitur
+                        </button>
+                        <ul class="dropdown-content">
+                            <li><a href="#chatbot">Chatbot</a></li>
+                            <li><a href="#destinasi">Tour Destination</a></li>
+                            <li><a href="#monument">Scan 3D Monument</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Switch Theme">
+                            🌙
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        <!-- ========== HERO / PROFILE SECTION ========== -->
+        <section class="profile-section" id="home">
+            <div class="profile-container">
+                <!-- TEXT -->
+                <div class="profile-text">
+                    <h2>Selamat Datang di Portal Pariwisata Indonesia</h2>
+                    <p>
+                        Indonesia memiliki ribuan pulau dengan keindahan alam menakjubkan, budaya yang kaya,
+                        serta keramahan penduduknya. Dari Bali yang eksotis, Raja Ampat yang memukau, hingga
+                        budaya Jawa yang kental — Indonesia menawarkan pengalaman tak terlupakan.
+                    </p>
+                    <p>
+                        Tanyakan apa pun tentang pariwisata Indonesia kepada chatbot kami!
+                    </p>
+                </div>
+                <!-- IMAGE -->
+                <figure class="profile-image-wrapper">
+                    <img src="https://www.oasisrajaampat.com/wp-content/uploads/2024/08/Raja-Ampat-Rekomendasi-Pengalaman-Berlibur-yang-Memukau.png"
+                         alt="Pemandangan Raja Ampat, Indonesia"
+                         class="profile-image">
+                </figure>
+            </div>
+        </section>
+        <!-- ========== CHATBOT SECTION ========== -->
+        <section class="chatbot-section" id="chatbot">
+            <div class="chatbot-container-main">
+                <!-- LEFT → CHATBOT WINDOW -->
+                <div class="chatbot-left">
+                    <header class="chatbot-header">
+                        <h3>Chatbot Pariwisata Indonesia</h3>
+                    </header>
+                    <div class="chatbot-messages" id="chat-messages">
+                        <article class="message bot-message">
+                            Halo! Saya adalah chatbot pariwisata Indonesia. Saya bisa membantu Anda dengan informasi
+                            tentang destinasi wisata, budaya, dan tips perjalanan. Apa yang ingin Anda ketahui?
+                        </article>
+                    </div>
+                    <!-- SUGGESTIONS -->
+                    <div class="suggestions">
+                        <div class="suggestion" data-question="Destinasi wisata populer di Indonesia">
+                            Destinasi wisata populer
+                        </div>
+                        <div class="suggestion" data-question="Budaya dan tradisi Indonesia">
+                            Budaya dan tradisi
+                        </div>
+                        <div class="suggestion" data-question="Tips perjalanan ke Indonesia">
+                            Tips perjalanan
+                        </div>
+                    </div>
+                    <!-- INPUT -->
+                    <div class="chatbot-input">
+                        <input type="text" id="user-input" placeholder="Ketik pertanyaan Anda..." aria-label="Ketik pertanyaan">
+                        <button id="send-button" aria-label="Kirim pesan">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- RIGHT → TEXT HEADER -->
+                <aside class="chatbot-right">
+                    <h2>Jelajahi Pesona Indonesia</h2>
+                    <p>
+                        Temukan rekomendasi destinasi wisata, budaya lokal, kuliner, hingga tips perjalanan terbaik.
+                        Chatbot kami membantu Anda merencanakan liburan dengan cepat dan mudah.
+                    </p>
+                </aside>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Explore Indonesia - Chatbot Pariwisata. All rights reserved.</p>
+    </footer>
+    
+    <!-- ================= JS ================= -->
+    <script src="js/script.js"></script>
+</body>
+</html>
